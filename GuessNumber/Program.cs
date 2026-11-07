@@ -1,17 +1,48 @@
-﻿Console.Write("Введите ваш возраст: ");
-int age = int.Parse(Console.ReadLine());
-string ageGroup = age >= 18 ? "совершеннолетний" : "несовершеннолетний";
-Console.WriteLine($"Вы {ageGroup}.");
+﻿// Console.Write("\nВведите номер дня недели (1-7): ");
+// int dayNumber = int.Parse(Console.ReadLine());
 
-Console.Write("\nВведите температуру за окном (°C): ");
-double temp = double.Parse(Console.ReadLine());
-string weather = temp >= 20 ? "тепло" : (temp >= 0 ? "прохладно" : "мороз");
-Console.WriteLine($"За окном {weather}.");
+// switch (dayNumber) {
+//     case 1:
+//     case 2:
+//     case 3:
+//     case 4:
+//     case 5:
+//         Console.WriteLine("Рабочий день — пора учиться!");
+//         break;
+//     case 6:
+//     case 7:
+//         Console.WriteLine("Выходной — заслуженный отдых.");
+//         break;
+//     default:
+//         Console.WriteLine("Такого дня не существует.");
+//         break;
+// }
 
-Console.Write("\nВведите число: ");
-int n = int.Parse(Console.ReadLine());
-string parity = n % 2 == 0 ? "чётное" : "нечётное";
-Console.WriteLine($"Число {n} — {parity}.");
+Console.Write("\nВведите номер месяца (1-12): ");
+int monthNumber = int.Parse(Console.ReadLine());
 
-
-
+switch (monthNumber) {
+    case 12:
+    case 1:
+    case 2:
+        Console.WriteLine("Зима");
+        break;
+    case 3:
+    case 4:
+    case 5:
+        Console.WriteLine("Весна");
+        break;
+    case 6:
+    case 7:
+    case 8:
+        Console.WriteLine("Лето");
+        break;
+    case 9:
+    case 10:
+    case 11:
+        Console.WriteLine("Осень");
+        break;
+    default:
+        Console.WriteLine("Такого месяца не существует.");
+        break;     
+}   
